@@ -1,0 +1,3 @@
+# Race Condition in Dynamic DOM Manipulation
+
+This repository demonstrates a common, yet subtle, race condition that can occur when dynamically manipulating the DOM in HTML/Javascript. The bug arises when Javascript attempts to access and modify a DOM element before the element has finished loading. This can cause errors or unexpected behavior. The solution involves using event listeners to ensure that the Javascript code only runs after the DOM is fully parsed.
