@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Using DOMContentLoaded to ensure the element exists before accessing it.
+    document.addEventListener('DOMContentLoaded', function() {
+      const myDiv = document.getElementById("myDiv");
+      myDiv.innerHTML = "<p>Content added dynamically.</p>"; 
+    });
+  </script>
+</body>
+</html>
